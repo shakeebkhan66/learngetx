@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learngetx/favourite_fruits_screen.dart';
+import 'package:get/get.dart';
+import 'package:learngetx/screens/favourite_fruits_screen.dart';
+import 'package:learngetx/screens/image_pick_screen.dart';
 
 void main() async{
   runApp(const MyApp());
@@ -12,9 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FavouriteFruitsScreen(),
+      home: ImagePickScreen(),
     );
   }
 }
