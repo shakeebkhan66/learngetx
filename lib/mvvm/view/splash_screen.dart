@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learngetx/mvvm/data/app_exceptions.dart';
+import 'package:learngetx/mvvm/utils/utils.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -17,7 +18,8 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          throw InternetException("This is me");
+          Utils.toastMessage("Toast Message");
+          // throw InternetException("This is me");
         },
       ),
     );
